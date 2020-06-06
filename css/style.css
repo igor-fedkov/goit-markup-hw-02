@@ -1,0 +1,272 @@
+:root {
+	/* Цвет кнопок, hover и focus элементов*/
+	--color-for-hovered: #2196f3;
+
+	/* Цвет текста кнопок и текста на затемненных элементах */
+	--color-for-btn-caption: #ffffff;
+
+	/* Цвет описания emai и tel в header, преимуществ и членов команды*/
+	--color-for-description: #757575;
+
+	/* Радиус скругления для изображений */
+	--radius-borders: 4px;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+
+	color: #212121;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	/* justify-content: space-between; */
+
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.no-display {
+	display: none;
+}
+
+/* 
++++++++++++++++++++++
+	Header
++++++++++++++++++++++
+*/
+.menu-nav,
+.mail-and-tel {
+	font-weight: 500;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+}
+
+.logo {
+	font-family: Raleway, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.19em;
+
+	letter-spacing: 0.03em;
+}
+
+.logo-text-web {
+	color: #2196f3;
+}
+
+.menu-nav ul a:hover,
+.menu-nav ul a:focus,
+.mail-and-tel a:hover,
+.mail-and-tel a:focus {
+	color: var(--color-for-hovered);
+}
+
+.mail-and-tel a {
+	color: var(--color-for-description);
+}
+
+/* 
++++++++++++++++++++++
+	Main
++++++++++++++++++++++
+*/
+/* 
+	+++Раздел Герой+++
+*/
+.order {
+	background: no-repeat url(/images/order-background.jpg);
+}
+
+.order div {
+	height: 600px;
+	background: rgba(47, 48, 58, 0.8);
+}
+
+.order h1 {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36em;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	color: white;
+}
+
+.order a {
+	display: inline-block;
+
+	text-decoration: none;
+	border-radius: var(--radius-borders);
+
+	padding-top: 10px;
+	padding-right: 32px;
+	padding-bottom: 10px;
+	padding-left: 32px;
+
+	color: var(--color-for-btn-caption);
+
+	background-color: var(--color-for-hovered);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 
+	+++ Наши особенности +++
+*/
+.features h3 {
+	font-size: 14px;
+	line-height: 1.14em;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.features p {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71em;
+	letter-spacing: 0.03em;
+
+	color: var(--color-for-description);
+}
+
+/* 
++++ Чем мы занимаемся +++
+*/
+.what-we-do div {
+	width: 370px;
+	height: 294px;
+
+	border-radius: var(--radius-borders);
+}
+
+.desctop-app {
+	background: no-repeat url(/images/desctop-app.jpg);
+}
+
+.mobile-app {
+	background: no-repeat url(/images/mobile-app.jpg);
+}
+
+.design-descriptions {
+	background: no-repeat url(/images/design-decisions.jpg);
+}
+
+.what-we-do div h3 {
+	display: block;
+
+	padding-top: 27px;
+	padding-bottom: 27px;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.71em;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--color-for-btn-caption);
+
+	background: rgba(47, 48, 58, 0.8);
+
+	border-bottom-left-radius: var(--radius-borders);
+	border-bottom-right-radius: var(--radius-borders);
+}
+/* 
++++ Наша команда +++
+*/
+.our-team {
+	height: 702px;
+
+	font-size: 16px;
+	line-height: 1.19em;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	background: #f5f4fa;
+}
+
+.our-team li div {
+	width: 270px;
+
+	background: #ffffff;
+
+	border-radius: var(--radius-borders);
+}
+
+.our-team h3 {
+	font-weight: 500;
+}
+
+.our-team p {
+	font-weight: normal;
+	color: var(--color-for-description);
+}
+
+/* 
++++++++++++++++++++++
+	Footer
++++++++++++++++++++++
+*/
+footer {
+	height: 253px;
+	background-color: #2f303a;
+}
+
+footer .logo {
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.our-address ul {
+	display: contents;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71em;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.our-address li:first-child {
+	color: #ffffff;
+}
+
+footer h3 {
+	font-size: 14px;
+	line-height: 1.14px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.site-developers {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.4);
+}

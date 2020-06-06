@@ -1,0 +1,35 @@
+h3 {
+	font-size: 18px;
+	line-height: 2em;
+
+	letter-spacing: 0.06em;
+}
+
+.type-of-work {
+	font-size: 16px;
+	line-height: 1.88em;
+
+	color: var(--color-for-description);
+}
+
+.select-btn a {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62em;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	display: inline-block;
+
+	margin: 4px;
+	padding: 6px 22px;
+
+	background: #f5f4fa;
+	border-radius: var(--radius-borders);
+}
+
+.select-btn a:focus,
+.select-btn a:hover {
+	background-color: var(--color-for-hovered);
+}
