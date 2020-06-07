@@ -55,7 +55,7 @@ a {
 	font-weight: 500;
 	font-size: 14px;
 	font-style: normal;
-	line-height: 16px;
+	line-height: 1.14em;
 	letter-spacing: 0.02em;
 }
 
@@ -73,15 +73,16 @@ a {
 	color: #2196f3;
 }
 
-.menu-nav ul a:hover,
-.menu-nav ul a:focus,
-.mail-and-tel a:hover,
-.mail-and-tel a:focus {
-	color: var(--color-for-hovered);
-}
-
 .mail-and-tel a {
 	color: var(--color-for-description);
+}
+
+.menu-nav a:hover,
+.menu-nav a:focus,
+.mail-and-tel a:hover,
+.mail-and-tel a:focus,
+.current {
+	color: var(--color-for-hovered);
 }
 
 /* 
@@ -112,7 +113,7 @@ a {
 	color: white;
 }
 
-.order a {
+.button {
 	display: inline-block;
 
 	text-decoration: none;
@@ -127,6 +128,12 @@ a {
 
 	background-color: var(--color-for-hovered);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover,
+.button:focus {
+	color: var(--color-for-hovered);
+	background-color: var(--color-for-btn-caption);
 }
 
 /* 
@@ -170,7 +177,7 @@ a {
 	background: no-repeat url(/images/design-decisions.jpg);
 }
 
-.what-we-do div h3 {
+.what-we-do h3 {
 	display: block;
 
 	padding-top: 27px;
@@ -205,7 +212,7 @@ a {
 	background: #f5f4fa;
 }
 
-.our-team li div {
+.our-team-list-item {
 	width: 270px;
 
 	background: #ffffff;
@@ -260,7 +267,7 @@ footer h3 {
 	color: #ffffff;
 }
 
-.site-developers {
+.copyright {
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 2em;
